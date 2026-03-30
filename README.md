@@ -1,15 +1,26 @@
 # TotalC_Registration_Bypass
-Script that auto clicks the right number when Total commander starts.
 
-1. **Create a file on your Desktop**  
-   - Right-click → New → Text Document → name it `your.ps1`  
+Script that automatically clicks the correct number when Total Commander starts.
+
+## Setup Instructions
+
+1. **Create a PowerShell file on your Desktop**  
+   - Right-click → New → Text Document → rename it to `your.ps1`  
    - Make sure the file extension is `.ps1`, not `.txt`.
 
-2. **Copy the script from autoSetup.ps1** into the `your.ps1` file  
-   - (paste the full PowerShell installation script)
+2. **Copy the script**  
+   - Open `autoSetup.ps1`  
+   - Copy the entire content and paste it into `your.ps1`
 
 3. **Run the script**  
-   - Right-click on `your.ps1` → **Run with PowerShell**  
+   - Open Command Prompt (cmd) in the folder where the script is located  
+   - Run:
+
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File .\your.ps1
+   ```
+   (This temporarily allows the PowerShell autoSetup script to run for this session only. It does not change system settings.)
+
 
 
 > Alternatively, you can download and extract the repository and run the script directly in Visual Studio Code.
